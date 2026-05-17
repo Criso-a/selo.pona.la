@@ -5,7 +5,7 @@
   "url_goatcounter": "https://selo-pona-la.goatcounter.com",
   "url_github": "https://github.com/pona-la/selo.pona.la/",
 
-  "use_navbar": false,
+  "use_navbar": true,
   "use_socials": true,
   "use_language_toggle": false
 }
