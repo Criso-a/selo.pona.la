@@ -4,7 +4,9 @@ import "selo-components/common.css"; // has to be above site-specific css
 import "@/global.css";
 import Layout from "src/components/Layout.astro";
 import { getCollection } from "astro:content";
-const blogposts = await getCollection('blog');
+const blogposts = (await getCollection('blog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
 ---
 
 <Layout title="Blog" description="Feel free to change this to your liking">
